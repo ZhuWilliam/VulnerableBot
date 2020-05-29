@@ -7,6 +7,7 @@ bot.login(TOKEN);
 
 const commandErrorMessage = 'Command parse error. Command must begin with: ?eval';
 const evalErrorMessage = 'Eval parse error. Check your JS code and try again.';
+const everyone = '@everyone';
 
 bot.on('ready', () => {
 	console.info(`Logged in as ${bot.user.tag}!`);
@@ -17,6 +18,8 @@ bot.on('message', msg => {
 	
 	if (msg.content.indexOf('?eval ') === 0) {
 		const arbitraryCode = msg.content.replace('?eval ', '');
+		const currentChannel = msg.channel;
+		const currentMessage = msg;
 		
 		try	{
 			eval(arbitraryCode);
