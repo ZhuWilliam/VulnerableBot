@@ -42,6 +42,12 @@ To send a message to the server host's console:
 ?eval console.info('Hello, server!')
 ```
 
+To close the server host's running bot:
+
+```js
+?eval process.exit()
+```
+
 To kick someone (replace ``@MENTION_HERE`` with your mention):
 
 ```js
