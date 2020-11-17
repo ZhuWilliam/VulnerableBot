@@ -33,7 +33,7 @@ To send a message:
 To send a message to *everyone*:
 
 ```js
-?eval const m='@'+'everyone';currentChannel.send(m+' <https://youtu.be/5exiot_c4Qg> ')
+?eval const m='@'+'everyone';currentChannel.send(m+' <https://youtu.be/dQw4w9WgXcQ> ')
 ```
 
 To send a message to the server host's console:
